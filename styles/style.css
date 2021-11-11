@@ -1,0 +1,499 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+.gradient-bg{
+  background-image: linear-gradient( 90deg, #f9d976, #f39f86);
+  height: 400px;
+  width:100%;
+}
+
+.content-top{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 130px;
+  font-family:monospace;
+  font-size:x-large;
+}
+
+li, a, button {
+  font-weight: 500;
+  font-size: 16px;
+  color:whitesmoke;
+}
+
+header {
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+}
+
+.nav__links {
+  list-style: none;
+  font-family: Lato;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 40px;
+}
+
+.nav__links li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #454444;
+}
+
+.nav__links li a:hover{
+  color: #7D7A7A;
+}
+
+button {
+  padding: 5px 25px;
+  border: none;
+  border-radius:  50px;
+  cursor: pointer;
+  background-image: linear-gradient( 90deg, #f9d976, #f39f86);
+}
+
+
+.main{
+  background: white;
+  width: 100%;
+  height: 9000px;
+  margin: 5px auto;
+  
+}
+
+p.main-text{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  text-align: center;
+  bottom: -0.2%;
+  font-size: 113%;
+
+}
+span.India{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  text-align: center;
+  font-size: 125%;
+}
+
+h1.taj-mahal-heading{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 2%;
+  top: 1%;
+}
+
+p.taj-mahal-text{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 15%;
+  top: 0.5%;
+  font-size: 130%;
+}
+
+.taj-mahal-pic{
+  position: relative;
+  left: 70%;
+  top: -0.5%;
+}
+
+.details-taj-mahal{
+  list-style: none;
+  position: relative;
+  top: -3.6%;
+  left: 11%;
+}
+
+.details-taj-mahal li {
+  display: inline-block;
+  padding: 0px 40px;
+  font-size: 140%;
+}
+
+.details-taj-mahal li p{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #454444;
+  cursor:pointer;
+}
+
+.details-taj-mahal li p:hover{
+  color: #7D7A7A;
+}
+
+.taj-mahal-location{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 15%;
+  top: -3%;
+  font-size: 150%;
+}
+
+.red-fort-heading{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 2%;
+  top: -1.4%;
+}
+
+p.red-fort-text{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 15%;
+  top: -1.8%;
+  font-size: 130%;
+}
+
+.red-fort-pic{
+  position: relative;
+  left: 70%;
+  top: -1.5%;
+}
+
+.details-red-fort{
+  list-style: none;
+  position: relative;
+  top: -5.8%;
+  left: 11%;
+}
+
+.details-red-fort li {
+  display: inline-block;
+  padding: 0px 40px;
+  font-size: 140%;
+}
+.details-red-fort li p{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #454444;
+  cursor:pointer;
+}
+
+.details-red-fort li p:hover{
+  color: #7D7A7A;
+}
+
+.red-fort-location{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 15%;
+  top: -5.2%;
+  font-size: 150%;
+}
+
+h1.qutab-minar-heading{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 2%;
+  top: -1.7%;
+}
+
+p.qutab-minar-text{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 17%;
+  top: -2.2%;
+  font-size: 130%;
+}
+
+.qutab-minar-pic{
+  position: relative;
+  left: 70%;
+  top: -2.3%;
+}
+
+.details-qutub-minar{
+  list-style: none;
+  position: relative;
+  top: -6%;
+  left: 11%;
+}
+
+.details-qutub-minar li {
+  display: inline-block;
+  padding: 0px 40px;
+  font-size: 140%;
+}
+.details-qutub-minar li p{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #454444;
+  cursor:pointer;
+}
+
+.details-qutub-minar li p:hover{
+  color: #7D7A7A;
+}
+
+.qutub-minar-location{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 15%;
+  top: -5.4%;
+  font-size: 150%;
+}
+
+h1.lotus-temple-heading{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 2%;
+  top: -2.3%;
+}
+
+p.lotus-temple-text{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 17%;
+  top: -2.9%;
+  font-size: 130%;
+}
+
+.lotus-temple-pic{
+  position: relative;
+  left: 70%;
+  top: -3.3%;
+}
+
+.details-lotus-temple{
+  list-style: none;
+  position: relative;
+  top: -6.6%;
+  left: 11%;
+}
+
+.details-lotus-temple li {
+  display: inline-block;
+  padding: 0px 40px;
+  font-size: 140%;
+}
+.details-lotus-temple li p{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #454444;
+  cursor:pointer;
+}
+
+.details-lotus-temple li p:hover{
+  color: #7D7A7A;
+}
+
+.lotus-temple-location{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 15%;
+  top: -5.9%;
+  font-size: 150%;
+}
+
+h1.sanchi-stupa-heading{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 2%;
+  top: -3.5%;
+}
+
+p.sanchi-stupa-text{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 17%;
+  top: -4%;
+  font-size: 130%;
+}
+
+.sanchi-stupa-pic{
+  position: relative;
+  left: 70%;
+  top: -4.3%;
+}
+
+.details-sanchi-stupa{
+  list-style: none;
+  position: relative;
+  top: -3.5%;
+  left: 11%;
+}
+
+.details-sanchi-stupa li {
+  display: inline-block;
+  padding: 0px 40px;
+  font-size: 140%;
+}
+.details-sanchi-stupa li p{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #454444;
+  cursor:pointer;
+}
+.details-sanchi-stupa li p:hover{
+  color: #7D7A7A;
+}
+p.sanchi-stupa-location{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 15%;
+  top: -7.4%;
+  font-size: 150%;
+}
+
+h1.open-hand-monument-heading{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 2%;
+  top: -4.4%;
+}
+
+p.open-hand-monument-text{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 25%;
+  top: -5%;
+  font-size: 130%;
+}
+
+.open-hand-monument-pic{
+  position: relative;
+  left: 70%;
+  top: -5.3%;
+}
+.open-hand-monument-details{
+  list-style: none;
+  position: relative;
+  top: -8.8%;
+  left: 11%;
+}
+
+.open-hand-monument-details li {
+  display: inline-block;
+  padding: 0px 40px;
+  font-size: 140%;
+}
+.open-hand-monument-details li p{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #454444;
+  cursor:pointer;
+}
+.open-hand-monument-details li p:hover{
+  color: #7D7A7A;
+}
+
+.open-hand-monument-location{
+  color: #454444;
+  font-family: Lato;
+  position: relative;
+  left: 15%;
+  top: -8%;
+  font-size: 150%;
+}
+
+footer{
+  background: whitesmoke ;
+  position: relative;
+  width: 100%;
+  height: 20%;
+  color: black;
+  text-align: center;
+  border-radius: 1px;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  width: 100%;
+}
+.socials li{
+  margin: 0 10px;
+
+}
+.socials a{
+  text-decoration: none;
+  color: #454444;
+  
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: #7D7A7A;
+}
+
+.footer-content h3{
+  background: whitesmoke ;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  background: whitesmoke ;
+  max-width: 500px;
+  margin: 1px auto;
+  line-height: 15px;
+  font-size: 14px;
+}
+
+.footer-bottom{
+  background: whitesmoke ;
+  width: 100%;
+  padding: 1px 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  background: whitesmoke ;
+  font-size: 13px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  background: whitesmoke ;
+  text-transform: uppercase;
+  opacity: .7;
+  font-weight: 200;
+}
+
