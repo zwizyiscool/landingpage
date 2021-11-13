@@ -1,9 +1,34 @@
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding:0;
+  overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 50px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 .gradient-bg{
@@ -17,7 +42,7 @@
   justify-content: center;
   text-align: center;
   padding: 130px;
-  font-family:monospace;
+  font-family:poppins;
   font-size:x-large;
 }
 
@@ -36,7 +61,7 @@ header {
 
 .nav__links {
   list-style: none;
-  font-family: Lato;
+  font-family: poppins;
 }
 
 .nav__links li {
@@ -54,35 +79,37 @@ header {
   color: #7D7A7A;
 }
 
-button {
+.contact-button{
   padding: 5px 25px;
   border: none;
-  border-radius:  50px;
+  border-radius:  50px 25px;
   cursor: pointer;
   background-image: linear-gradient( 90deg, #f9d976, #f39f86);
 }
 
 
 .main{
-  background: white;
+  background-image: url('../assets/background.png');
   width: 100%;
-  height: 9000px;
-  margin: 5px auto;
-  
+  height: 3800px;
+  overflow-y: hidden;
 }
+
+
+
 
 p.main-text{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   text-align: center;
   bottom: -0.2%;
-  font-size: 113%;
+  font-size: 22px;
 
 }
 span.India{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   text-align: center;
   font-size: 125%;
@@ -98,24 +125,27 @@ h1.taj-mahal-heading{
 
 p.taj-mahal-text{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
-  left: 15%;
+  left: 13.5%;
   top: 0.5%;
-  font-size: 130%;
+  font-size: 20px;
 }
 
 .taj-mahal-pic{
   position: relative;
   left: 70%;
   top: -0.5%;
+  border-radius: 50px 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .details-taj-mahal{
   list-style: none;
   position: relative;
-  top: -3.6%;
-  left: 11%;
+  font-family: poppins;
+  top: -8.6%;
+  left: 8%;
 }
 
 .details-taj-mahal li {
@@ -137,10 +167,10 @@ p.taj-mahal-text{
 
 .taj-mahal-location{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   left: 15%;
-  top: -3%;
+  top: -8%;
   font-size: 150%;
 }
 
@@ -154,24 +184,27 @@ p.taj-mahal-text{
 
 p.red-fort-text{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   left: 15%;
   top: -1.8%;
-  font-size: 130%;
+  font-size: 20px;
 }
 
 .red-fort-pic{
   position: relative;
   left: 70%;
   top: -1.5%;
+  border-radius: 50px 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .details-red-fort{
   list-style: none;
   position: relative;
-  top: -5.8%;
-  left: 11%;
+  top: -10.8%;
+  left: 7%;
+  font-family: poppins;
 }
 
 .details-red-fort li {
@@ -192,10 +225,10 @@ p.red-fort-text{
 
 .red-fort-location{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
-  left: 15%;
-  top: -5.2%;
+  left: 11%;
+  top: -9.7%;
   font-size: 150%;
 }
 
@@ -209,24 +242,27 @@ h1.qutab-minar-heading{
 
 p.qutab-minar-text{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   left: 17%;
   top: -2.2%;
-  font-size: 130%;
+  font-size: 20px;
 }
 
 .qutab-minar-pic{
   position: relative;
   left: 70%;
   top: -2.3%;
+  border-radius: 50px 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .details-qutub-minar{
   list-style: none;
   position: relative;
-  top: -6%;
-  left: 11%;
+  top: -11%;
+  left: 10%;
+  font-family: poppins;
 }
 
 .details-qutub-minar li {
@@ -247,10 +283,10 @@ p.qutab-minar-text{
 
 .qutub-minar-location{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   left: 15%;
-  top: -5.4%;
+  top: -9.8%;
   font-size: 150%;
 }
 
@@ -264,24 +300,27 @@ h1.lotus-temple-heading{
 
 p.lotus-temple-text{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   left: 17%;
   top: -2.9%;
-  font-size: 130%;
+  font-size: 20px;
 }
 
 .lotus-temple-pic{
   position: relative;
   left: 70%;
   top: -3.3%;
+  border-radius: 50px 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .details-lotus-temple{
   list-style: none;
   position: relative;
-  top: -6.6%;
-  left: 11%;
+  font-family: poppins;
+  top: -12%;
+  left: 7%;
 }
 
 .details-lotus-temple li {
@@ -302,10 +341,10 @@ p.lotus-temple-text{
 
 .lotus-temple-location{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
-  left: 15%;
-  top: -5.9%;
+  left: 9%;
+  top: -10.3%;
   font-size: 150%;
 }
 
@@ -319,24 +358,27 @@ h1.sanchi-stupa-heading{
 
 p.sanchi-stupa-text{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   left: 17%;
   top: -4%;
-  font-size: 130%;
+  font-size: 20px;
 }
 
 .sanchi-stupa-pic{
   position: relative;
   left: 70%;
   top: -4.3%;
+  border-radius: 50px 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .details-sanchi-stupa{
   list-style: none;
   position: relative;
-  top: -3.5%;
-  left: 11%;
+  font-family: poppins;
+  top: -2.5%;
+  left: 8%;
 }
 
 .details-sanchi-stupa li {
@@ -355,10 +397,10 @@ p.sanchi-stupa-text{
 }
 p.sanchi-stupa-location{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   left: 15%;
-  top: -7.4%;
+  top: -11.4%;
   font-size: 150%;
 }
 
@@ -372,23 +414,26 @@ h1.open-hand-monument-heading{
 
 p.open-hand-monument-text{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   left: 25%;
   top: -5%;
-  font-size: 130%;
+  font-size: 20px;
 }
 
 .open-hand-monument-pic{
   position: relative;
   left: 70%;
   top: -5.3%;
+  border-radius: 50px 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .open-hand-monument-details{
   list-style: none;
   position: relative;
-  top: -8.8%;
-  left: 11%;
+  font-family: poppins;
+  top: -13.8%;
+  left: 9%;
 }
 
 .open-hand-monument-details li {
@@ -408,21 +453,68 @@ p.open-hand-monument-text{
 
 .open-hand-monument-location{
   color: #454444;
-  font-family: Lato;
+  font-family: poppins;
   position: relative;
   left: 15%;
-  top: -8%;
+  top: -12%;
   font-size: 150%;
+}
+
+h1.contact-heading{
+  font-size: xx-large;
+  font-family: poppins;
+  position: relative;
+  top: -315px;
+  left: 35%;
+}
+.contact{
+  width: 500px;
+  left: 85%;
+  top: -140px;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+form{
+  margin: 35px;
+
+}
+.input-field{
+  width: 400px;
+  height: 40px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border: 1px solid #777;
+  border-radius: 14px;
+  outline: none;
+  font-family: poppins;
+}
+
+.textarea-field{
+  height: 150px;
+  padding-top: 10px;
+  font-family: poppins;
+}
+.send-contact{
+  border-radius: 20px;
+  color: #777;
+  margin-top: 18px;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  font-family: poppins;
 }
 
 footer{
   background: whitesmoke ;
   position: relative;
   width: 100%;
-  height: 20%;
   color: black;
   text-align: center;
-  border-radius: 1px;
+  height: 380px;
+  overflow-y: hidden; 
 }
 
 .footer-content{
@@ -431,7 +523,19 @@ footer{
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
   width: 100%;
+}
+
+h4.footer-heading{
+  font-family: poppins;
+  font-size: 50px;
+}
+
+h4.footer-text{
+  font-family: poppins;
+  overflow-y: hidden;
+  font-size: 20px;
 }
 
 .socials{
@@ -441,6 +545,7 @@ footer{
   justify-content: center;
   margin: 1rem 0 3rem 0;
   width: 100%;
+
 }
 .socials li{
   margin: 0 10px;
@@ -449,12 +554,12 @@ footer{
 .socials a{
   text-decoration: none;
   color: #454444;
-  
+  bottom: 45px;
 }
 .socials a i{
-  font-size: 1.1rem;
+  font-size: 35px;
   transition: color .4s ease;
-
+  overflow-y: hidden;
 }
 .socials a:hover i{
   color: #7D7A7A;
@@ -476,24 +581,30 @@ footer{
   font-size: 14px;
 }
 
-.footer-bottom{
-  background: whitesmoke ;
-  width: 100%;
-  padding: 1px 0;
-  text-align: center;
+
+
+.links {
+  list-style: none;
+  font-family: poppins;
+  position: relative;
+  top: -5px;
 }
 
-.footer-bottom p{
-  background: whitesmoke ;
-  font-size: 13px;
-  word-spacing: 2px;
-  text-transform: capitalize;
+.links li {
+  display: inline-block;
+  padding: 0px 40px;
 }
 
-.footer-bottom span{
-  background: whitesmoke ;
-  text-transform: uppercase;
-  opacity: .7;
-  font-weight: 200;
+.links li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #454444;
+  font-size: 20px;
 }
+
+.links li a:hover{
+  color: #7D7A7A;
+}
+
+
 
