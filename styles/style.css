@@ -1,6 +1,10 @@
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face{
+  font-family:'Hindi';
+  src: url('../fonts/font1.TTF') format('truetype');
+}
 
 * {
   box-sizing: border-box;
@@ -35,6 +39,7 @@
   background-image: linear-gradient( 90deg, #f9d976, #f39f86);
   height: 400px;
   width:100%;
+  overflow-y: hidden;
 }
 
 .content-top{
@@ -42,8 +47,8 @@
   justify-content: center;
   text-align: center;
   padding: 130px;
-  font-family:poppins;
-  font-size:x-large;
+  font-family:hindi;
+  font-size:40px;
 }
 
 li, a, button {
@@ -59,24 +64,17 @@ header {
   padding: 5px 10%;
 }
 
-.nav__links {
-  list-style: none;
-  font-family: poppins;
+.logo{
+  transition: .5s ease;
+  position: relative;
+  left: 46%;
+  width: 70px;
+  height:70px;
 }
 
-.nav__links li {
-  display: inline-block;
-  padding: 0px 40px;
-}
-
-.nav__links li a{
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  color: #454444;
-}
-
-.nav__links li a:hover{
-  color: #7D7A7A;
+.logo:hover{
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .contact-button{
@@ -84,6 +82,8 @@ header {
   border: none;
   border-radius:  50px 25px;
   cursor: pointer;
+  height: 35px;
+  width: 150px;
   background-image: linear-gradient( 90deg, #f9d976, #f39f86);
 }
 
@@ -91,25 +91,60 @@ header {
 .main{
   background-image: url('../assets/background.png');
   width: 100%;
-  height: 3800px;
+  height: 2800px;
   overflow-y: hidden;
 }
 
+.mon1 , .mon2 , .mon3 , .mon4 , .mon5{
+  display: grid;
+  grid-template-areas: "heading content pic";
+  grid-template-columns: 1fr 5fr 3fr;
+  grid-auto-rows: minmax(100px auto);
+  grid-auto-columns: minmax(100px auto);
+  margin-bottom: 5%;
+}
 
+.mon1{
+  margin-top: 2%;
+}
 
+.mon1-content,.mon2-content,.mon3-content,.mon4-content,.mon5-content{
+  grid-area: content;
+}
+
+.mon1-pic,.mon2-pic,.mon3-pic,.mon4-pic,.mon5-pic{
+  grid-area: pic;
+}
+
+.mon1-heading, .mon2-heading , .mon3-heading, .mon4-heading, .mon5-heading{
+  grid-area: heading;
+}
+
+.pic{
+  left: 15%;
+  bottom:20px;
+}
+
+.loc{
+  top: 60px;
+}
+
+.det{
+  top:40px;
+}
 
 p.main-text{
   color: #454444;
-  font-family: poppins;
+  font-family: hindi;
   position: relative;
   text-align: center;
   bottom: -0.2%;
-  font-size: 22px;
-
+  font-size: 30px;
 }
+
 span.India{
   color: #454444;
-  font-family: poppins;
+  font-family: hindi;
   position: relative;
   text-align: center;
   font-size: 125%;
@@ -119,23 +154,20 @@ h1.taj-mahal-heading{
   color: #454444;
   font-family: Lato;
   position: relative;
-  left: 2%;
-  top: 1%;
+
 }
 
 p.taj-mahal-text{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 13.5%;
-  top: 0.5%;
+
   font-size: 20px;
 }
 
 .taj-mahal-pic{
   position: relative;
-  left: 70%;
-  top: -0.5%;
+
   border-radius: 50px 20px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -144,8 +176,7 @@ p.taj-mahal-text{
   list-style: none;
   position: relative;
   font-family: poppins;
-  top: -8.6%;
-  left: 8%;
+
 }
 
 .details-taj-mahal li {
@@ -169,8 +200,7 @@ p.taj-mahal-text{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 15%;
-  top: -8%;
+
   font-size: 150%;
 }
 
@@ -178,23 +208,20 @@ p.taj-mahal-text{
   color: #454444;
   font-family: Lato;
   position: relative;
-  left: 2%;
-  top: -1.4%;
+
 }
 
 p.red-fort-text{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 15%;
-  top: -1.8%;
+
   font-size: 20px;
 }
 
 .red-fort-pic{
   position: relative;
-  left: 70%;
-  top: -1.5%;
+
   border-radius: 50px 20px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -202,8 +229,7 @@ p.red-fort-text{
 .details-red-fort{
   list-style: none;
   position: relative;
-  top: -10.8%;
-  left: 7%;
+
   font-family: poppins;
 }
 
@@ -227,8 +253,7 @@ p.red-fort-text{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 11%;
-  top: -9.7%;
+
   font-size: 150%;
 }
 
@@ -236,23 +261,20 @@ h1.qutab-minar-heading{
   color: #454444;
   font-family: Lato;
   position: relative;
-  left: 2%;
-  top: -1.7%;
+
 }
 
 p.qutab-minar-text{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 17%;
-  top: -2.2%;
+
   font-size: 20px;
 }
 
 .qutab-minar-pic{
   position: relative;
-  left: 70%;
-  top: -2.3%;
+
   border-radius: 50px 20px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -260,8 +282,7 @@ p.qutab-minar-text{
 .details-qutub-minar{
   list-style: none;
   position: relative;
-  top: -11%;
-  left: 10%;
+
   font-family: poppins;
 }
 
@@ -285,8 +306,7 @@ p.qutab-minar-text{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 15%;
-  top: -9.8%;
+
   font-size: 150%;
 }
 
@@ -294,23 +314,20 @@ h1.lotus-temple-heading{
   color: #454444;
   font-family: Lato;
   position: relative;
-  left: 2%;
-  top: -2.3%;
+
 }
 
 p.lotus-temple-text{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 17%;
-  top: -2.9%;
+
   font-size: 20px;
 }
 
 .lotus-temple-pic{
   position: relative;
-  left: 70%;
-  top: -3.3%;
+
   border-radius: 50px 20px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -319,8 +336,7 @@ p.lotus-temple-text{
   list-style: none;
   position: relative;
   font-family: poppins;
-  top: -12%;
-  left: 7%;
+
 }
 
 .details-lotus-temple li {
@@ -343,8 +359,7 @@ p.lotus-temple-text{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 9%;
-  top: -10.3%;
+
   font-size: 150%;
 }
 
@@ -352,23 +367,20 @@ h1.sanchi-stupa-heading{
   color: #454444;
   font-family: Lato;
   position: relative;
-  left: 2%;
-  top: -3.5%;
+
 }
 
 p.sanchi-stupa-text{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 17%;
-  top: -4%;
+
   font-size: 20px;
 }
 
 .sanchi-stupa-pic{
   position: relative;
-  left: 70%;
-  top: -4.3%;
+
   border-radius: 50px 20px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -377,8 +389,7 @@ p.sanchi-stupa-text{
   list-style: none;
   position: relative;
   font-family: poppins;
-  top: -2.5%;
-  left: 8%;
+
 }
 
 .details-sanchi-stupa li {
@@ -399,64 +410,7 @@ p.sanchi-stupa-location{
   color: #454444;
   font-family: poppins;
   position: relative;
-  left: 15%;
-  top: -11.4%;
-  font-size: 150%;
-}
 
-h1.open-hand-monument-heading{
-  color: #454444;
-  font-family: Lato;
-  position: relative;
-  left: 2%;
-  top: -4.4%;
-}
-
-p.open-hand-monument-text{
-  color: #454444;
-  font-family: poppins;
-  position: relative;
-  left: 25%;
-  top: -5%;
-  font-size: 20px;
-}
-
-.open-hand-monument-pic{
-  position: relative;
-  left: 70%;
-  top: -5.3%;
-  border-radius: 50px 20px;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-.open-hand-monument-details{
-  list-style: none;
-  position: relative;
-  font-family: poppins;
-  top: -13.8%;
-  left: 9%;
-}
-
-.open-hand-monument-details li {
-  display: inline-block;
-  padding: 0px 40px;
-  font-size: 140%;
-}
-.open-hand-monument-details li p{
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  color: #454444;
-  cursor:pointer;
-}
-.open-hand-monument-details li p:hover{
-  color: #7D7A7A;
-}
-
-.open-hand-monument-location{
-  color: #454444;
-  font-family: poppins;
-  position: relative;
-  left: 15%;
-  top: -12%;
   font-size: 150%;
 }
 
@@ -464,13 +418,13 @@ h1.contact-heading{
   font-size: xx-large;
   font-family: poppins;
   position: relative;
-  top: -315px;
+  top: -290px;
   left: 35%;
 }
 .contact{
   width: 500px;
   left: 85%;
-  top: -140px;
+  top: -110px;
   transform: translate(-50%, -50%);
   position: relative;
 }
@@ -484,7 +438,7 @@ form{
   height: 40px;
   margin-top: 10px;
   padding-left: 10px;
-  border: 1px solid #777;
+  border: none;
   border-radius: 14px;
   outline: none;
   font-family: poppins;
@@ -494,6 +448,7 @@ form{
   height: 150px;
   padding-top: 10px;
   font-family: poppins;
+  resize: none;
 }
 .send-contact{
   border-radius: 20px;
@@ -513,7 +468,7 @@ footer{
   width: 100%;
   color: black;
   text-align: center;
-  height: 380px;
+  height: 430px;
   overflow-y: hidden; 
 }
 
@@ -583,28 +538,6 @@ h4.footer-text{
 
 
 
-.links {
-  list-style: none;
-  font-family: poppins;
-  position: relative;
-  top: -5px;
-}
-
-.links li {
-  display: inline-block;
-  padding: 0px 40px;
-}
-
-.links li a{
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  color: #454444;
-  font-size: 20px;
-}
-
-.links li a:hover{
-  color: #7D7A7A;
-}
 
 
 
